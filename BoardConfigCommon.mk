@@ -21,6 +21,10 @@ TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a76
 
+# Bootloader
+TARGET_BOOTLOADER_BOARD_NAME := atoll
+TARGET_NO_BOOTLOADER := true
+
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 
