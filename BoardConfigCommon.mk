@@ -37,6 +37,12 @@ DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
 TARGET_INIT_VENDOR_LIB ?= //$(COMMON_PATH):init_xiaomi_atoll
 TARGET_RECOVERY_DEVICE_MODULES ?= init_xiaomi_atoll
 
+# HIDL
+ODM_MANIFEST_SKUS += \
+    nfc
+
+ODM_MANIFEST_NFC_FILES := $(COMMON_PATH)/manifest_nfc.xml
+
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_IMAGE_NAME := Image.gz
