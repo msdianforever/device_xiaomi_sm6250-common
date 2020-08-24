@@ -114,7 +114,7 @@ PRODUCT_PACKAGES += \
     libstdc++.vendor
 
 PRODUCT_PACKAGES += \
-    Snap
+    GCamGOPrebuilt
 
 # Component overrides
 PRODUCT_COPY_FILES += \
