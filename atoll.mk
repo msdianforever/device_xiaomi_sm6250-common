@@ -13,5 +13,8 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
+# Enable updating of APEXes
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
 # Inherit proprietary targets
 $(call inherit-product, vendor/xiaomi/sm6250-common/sm6250-common-vendor.mk)
