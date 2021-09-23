@@ -194,6 +194,10 @@ PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
     android.hardware.ir@1.0-service
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light-service.xiaomi
+
 # Rootdir
 PRODUCT_PACKAGES += \
     init.qcom.early_boot.sh \
