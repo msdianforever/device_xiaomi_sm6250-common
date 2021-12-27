@@ -180,6 +180,9 @@ VENDOR_SECURITY_PATCH := 2021-07-01
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 
+# Shims
+TARGET_LD_SHIM_LIBS := vendor/lib/hw/audio.primary.atoll.so|fakelogprint.so
+
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
